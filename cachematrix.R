@@ -1,7 +1,6 @@
 ## The functions bellow create a special object that is able to store a given matrix and cache its inverse.
 
 ## This function creates a special matrix that can cache its inverse.
-
 makeCacheMat <- function(x=matrix(), ...) {
   m <- NULL 
   set <- function(y) {
@@ -18,7 +17,6 @@ makeCacheMat <- function(x=matrix(), ...) {
 
 
 ## This function calculates the inverse of the special matrix created with the function above
-
 cacheSolve <- function(x, ...) {
   m <- x$getinverse() # create local object 'm' that contains the inverse calculated with the previous function
   #If 'm' is not empty, give the message "getting cached data" and show 'm'
